@@ -8,7 +8,7 @@ import pandas as pd
 START_URL = "https://exoplanets.nasa.gov/exoplanet-catalog/"
 
 # Webdriver
-browser = webdriver.Chrome("C:/Users/Info/Downloads/PRO-C127-Student-Boilerplate-Code-main/PRO-C127-Student-Boilerplate-Code-main/chromedriver_win32")
+browser = webdriver.Chrome("chromedriver.exe")
 browser.get(START_URL)
 
 time.sleep(10)
@@ -18,7 +18,7 @@ planets_data = []
 # Define Exoplanet Data Scrapping Method
 def scrape():
 
-    for i in range(0,10):
+    for i in range(0,213):
         print(f'Scrapping page {i+1} ...' )
 
         ## ADD CODE HERE ##
